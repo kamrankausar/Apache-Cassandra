@@ -1,0 +1,31 @@
+
+    1. You can start Cassandra with 
+    
+    $ sudo service cassandra start 
+    $ sudo service cassandra status
+    $ sudo chkconfig cassandra on     (Start Cassandra on reboot)
+    
+    2. and stop it with 
+    $sudo service cassandra stop.
+    
+    3. Note However, normally the service will start automatically. 
+    For this reason be sure to stop it if you need to make any configuration changes.
+    
+    4. Verify that Cassandra is running by invoking  from the command line.
+    $ nodetool status 
+    O/P
+    $ sudo nodetool status
+
+Datacenter: datacenter1
+=======================
+Status=Up/Down
+|/ State=Normal/Leaving/Joining/Moving
+--  Address    Load       Tokens       Owns (effective)  Host ID                               Rack
+UN  127.0.0.1  103.01 KiB  256          100.0%            da43244b-b1f1-4426-9b24-9ea3cb31ec    rack1
+Note UN- UP and Running 
+    
+    5. The default location of configuration files is /etc/cassandra.
+    
+    6. The default location of log and data directories is /var/log/cassandra/ and /var/lib/cassandra.
+    
+    7. Start-up options (heap size, etc) can be configured in /etc/default/cassandra.
