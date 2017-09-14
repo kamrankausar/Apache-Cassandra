@@ -1,0 +1,32 @@
+$ sudo apt-get update
+
+Installing JDK 8
+$ sudo add-apt-repository ppa:webupd8team/java
+$ sudo apt-get update
+$ sudo apt-get -y install oracle-java8-installer
+$ java -version
+o/p - openjdk version "1.8.0_131"
+OpenJDK Runtime Environment (build 1.8.0_131-8u131-b11-2ubuntu1.16.04.3-b11)
+OpenJDK 64-Bit Server VM (build 25.131-b11, mixed mode)
+
+
+Installing Apache Cassandra:
+Step 1: Add source list
+Step 2: Add the Apache Cassandra repository keys:
+Step 3: Update the repositories:
+Step 4: Install Cassandra:
+
+Step 1: Add the Apache repository of Cassandra to /etc/apt/sources.list.d/cassandra.sources.list, for example for the latest 3.11 version:
+$ echo "deb http://www.apache.org/dist/cassandra/debian 311x main" | sudo tee -a /etc/apt/sources.list.d/cassandra.sources.list 
+
+Step 2: Add the Apache Cassandra repository keys:
+$ sudo apt-get install curl
+$ curl https://www.apache.org/dist/cassandra/KEYS | sudo apt-key add - 
+$ sudo apt-get update
+Note if getting error in adding public key 
+then hit "http://cassandra.apache.org/download/"
+
+
+Step 4: Install Cassandra:
+$ sudo apt-get install cassandra
+
