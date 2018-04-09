@@ -30,3 +30,4 @@ then hit "http://cassandra.apache.org/download/"
 Step 4: Install Cassandra:
 $ sudo apt-get install cassandra
 
+Link "http://cassandra.apache.org/download/"
